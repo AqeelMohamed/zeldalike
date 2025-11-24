@@ -86,7 +86,7 @@ states/Idle/position = Vector2(389.5, 100.75)
 states/Walk/node = SubResource("AnimationNodeBlendSpace2D_i5ol5")
 states/Walk/position = Vector2(389.4375, 242.5)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_rdrvn"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_gitc2"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_k8tm6")]
-graph_offset = Vector2(70, 50)
+graph_offset = Vector2(-3, 10)
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wmr2w"]
 advance_mode = 2
@@ -104,4 +104,4 @@ states/MoveState/node = SubResource("AnimationNodeStateMachine_uj4ca")
 states/MoveState/position = Vector2(443, 115.25)
 states/Start/position = Vector2(222.5, 116.5)
 transitions = ["Start", "MoveState", SubResource("AnimationNodeStateMachineTransition_wmr2w"), "AttackState", "MoveState", SubResource("AnimationNodeStateMachineTransition_vjaj7"), "MoveState", "AttackState", SubResource("AnimationNodeStateMachineTransition_14eg0")]
-graph_offset = Vector2(138, 56)
+graph_offset = Vector2(58, 5)
