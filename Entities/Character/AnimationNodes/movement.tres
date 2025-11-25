@@ -74,11 +74,11 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gitc2"]
 advance_mode = 2
-advance_expression = "input_vector.length() > 0"
+advance_expression = "states[\"movestate\"].input_vector.length() > 0"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_k8tm6"]
 advance_mode = 2
-advance_expression = "input_vector.length() == 0"
+advance_expression = "states[\"movestate\"].input_vector.length() == 0"
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_uj4ca"]
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_dv0oc")
@@ -104,4 +104,4 @@ states/MoveState/node = SubResource("AnimationNodeStateMachine_uj4ca")
 states/MoveState/position = Vector2(443, 115.25)
 states/Start/position = Vector2(222.5, 116.5)
 transitions = ["Start", "MoveState", SubResource("AnimationNodeStateMachineTransition_wmr2w"), "AttackState", "MoveState", SubResource("AnimationNodeStateMachineTransition_vjaj7"), "MoveState", "AttackState", SubResource("AnimationNodeStateMachineTransition_14eg0")]
-graph_offset = Vector2(58, 5)
+graph_offset = Vector2(55, 51)

@@ -18,7 +18,7 @@
 [ext_resource type="Script" uid="uid://ccdwf15se4pvn" path="res://Entities/Character/Scripts/player_move_state.gd" id="16_58qp2"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_6un4u"]
-graph_offset = Vector2(-344.47507, 0)
+graph_offset = Vector2(-351.14246, -5.324566)
 nodes/StateMachine/node = ExtResource("2_y6xdg")
 nodes/StateMachine/position = Vector2(10, 130)
 node_connections = [&"output", 0, &"StateMachine"]
@@ -1380,7 +1380,7 @@ script = ExtResource("1_mlri7")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeBlendTree_6un4u")
-advance_expression_base_node = NodePath("..")
+advance_expression_base_node = NodePath("../FiniteStateMachine")
 anim_player = NodePath("../AnimationPlayer")
 parameters/StateMachine/AttackState/blend_position = Vector2(0, 0)
 parameters/StateMachine/MoveState/Idle/blend_position = Vector2(0.095505595, 0.33207548)
